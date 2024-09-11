@@ -84,6 +84,7 @@
     ![VSCodeExtensionPic](https://raw.githubusercontent.com/Usercyk/images/main/VSCodeExtensionPic.png)
 
     在输入框中输入chinese，下载插件。
+
     ![ChineseExtension](https://raw.githubusercontent.com/Usercyk/images/main/ChineseExtension.png)
 2. 创建工作区Workspace
     在VSCode中，存在一个内置的用于分割不同配置、语言、插件等的划分系统，称为工作区。每个工作区中可以有和别的工作区不同的配置以及插件，这也和python的虚拟环境不谋而合。
@@ -138,4 +139,28 @@
 #### 二、配置VSCode
 
 1. 下载方式见前
-2. ...
+2. 下载Code Runner和C/C++ Extension Pack插件
+3. 配置完成了！点击右上角三角选择使用Run Code运行即可，类似前面Python配置运行方式。
+4. 中文输出乱码：
+    - 打开Code Runner设置，编辑executorMap，将其中c和c++两项改为
+
+    ```json
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -fexec-charset=gbk && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -fexec-charset=gbk && $dir$fileNameWithoutExt",
+    }
+    ```
+
+    这会让GCC使用GBK编码进行编译，如果仍乱码，改成`utf-8`试试。
+
+5. （可选）修改编译exe位置：
+    - 打开Code Runner设置，编辑executorMap，将其中c和c++两项改为
+
+    ```json
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -D LOCAL -o .\\build\\$fileNameWithoutExt -fexec-charset=gbk && .\\build\\$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -D LOCAL -o .\\build\\$fileNameWithoutExt -fexec-charset=gbk && .\\build\\$fileNameWithoutExt",
+    }
+    ```
+
+    这会让编译的exe文件保存至`build`文件夹下，使得项目显得比较顺眼。
