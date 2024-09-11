@@ -117,6 +117,14 @@
     ![ChooseRunCode](https://raw.githubusercontent.com/Usercyk/images/main/ChooseRunCode.png)
     > PS: 其它的几个选项也可以运行/调试Python，但是很丑（
 
+### Python with Pycharm
+
+TODO
+
+### Python with Spyder/Anaconda
+
+TODO
+
 ## C/Cpp环境
 
 ### C/Cpp with VSCode
@@ -164,3 +172,9 @@
     ```
 
     这会让编译的exe文件保存至`build`文件夹下，使得项目显得比较顺眼。
+
+> PS: 这个配置真的很简单吧
+
+### C/CPP with Visual Studio
+
+TODO
