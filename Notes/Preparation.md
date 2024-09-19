@@ -114,6 +114,7 @@
     这是让插件和vscode可以自动读取autopep8库运行的结果，从而帮你把你写的代码格式修改为PEP-8中的要求，即更好看。快捷键shift+alt+F可以帮你整理你的python代码。
 9. 找到插件Code Runner，修改其设置，启用Run In Terminal选项。
 10. 运行python代码时，第一次可能需要在右上角的三角运行框中选择Run Code，之后可以直接点击三角来运行。
+
     ![ChooseRunCode](https://raw.githubusercontent.com/Usercyk/images/main/ChooseRunCode.png)
     > PS: 其它的几个选项也可以运行/调试Python，但是很丑（
 
