@@ -1,6 +1,6 @@
 # Assignment #1: 自主学习
 
-Updated 0110 GMT+8 Sep 20, 2024
+Updated Sep 20, 2024
 
 2024 fall, Complied by 曹以楷 物理学院
 
@@ -8,7 +8,7 @@ Updated 0110 GMT+8 Sep 20, 2024
 
 ### 02733: 判断闰年
 
-http://cs101.openjudge.cn/practice/02733/
+<http://cs101.openjudge.cn/practice/02733/>
 
 思路：判断条件后输出即可，或调用calendar库
 
@@ -24,7 +24,7 @@ print("Y" if y % 4 == 0 and (y % 100 != 0 or y % 400 == 0) else "N")
 
 ### 02750: 鸡兔同笼
 
-http://cs101.openjudge.cn/practice/02750/
+<http://cs101.openjudge.cn/practice/02750/>
 
 思路：直接输出全是鸡或全是兔的情况，注意边界情况即可
 
@@ -46,7 +46,7 @@ else:
 
 ### 50A. Domino piling
 
-greedy, math, 800, http://codeforces.com/problemset/problem/50/A
+greedy, math, 800, <http://codeforces.com/problemset/problem/50/A>
 
 思路：黑白相间染色
 
@@ -62,7 +62,7 @@ print(a*b//2)
 
 ### 1A. Theatre Square
 
-math, 1000, https://codeforces.com/problemset/problem/1/A
+math, 1000, <https://codeforces.com/problemset/problem/1/A>
 
 思路：分别覆盖两条边
 
@@ -79,7 +79,7 @@ print(ceil(n/a)*ceil(m/a))
 
 ### 112A. Petya and Strings
 
-implementation, strings, 1000, http://codeforces.com/problemset/problem/112/A
+implementation, strings, 1000, <http://codeforces.com/problemset/problem/112/A>
 
 思路：统一后大小写后比大小
 
@@ -96,7 +96,7 @@ print(-1 if n < m else 0 if n == m else 1)
 
 ### 231A. Team
 
-bruteforce, greedy, 800, http://codeforces.com/problemset/problem/231/A
+bruteforce, greedy, 800, <http://codeforces.com/problemset/problem/231/A>
 
 思路：求和判断是否大于2即可，这里没有使用`sum`，改用`reduce`。
 
