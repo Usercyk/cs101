@@ -1,6 +1,6 @@
 from functools import reduce
 
-vowels = ["a", "e", "i", "o", "u"]
+vowels = ["a", "e", "i", "o", "u", "y"]
 
 s = input().lower()
 
