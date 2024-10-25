@@ -1,0 +1,5 @@
+n = int(input())
+t = sorted(((v, i) for i, v in enumerate(map(int, input().split()))))
+print(*(p[1]+1 for p in t))
+wait = sum((p[0]*(n-1-i) for i, p in enumerate(t)))
+print("{:.2f}".format(wait/n))
